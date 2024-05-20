@@ -188,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				5ED876CF2BFAA0A0009FE7EF /* Network */,
-				5ED876C52BFA9EF9009FE7EF /* Managers */,
 				5ED876AC2BFA1AEE009FE7EF /* Features */,
 				5ED876A72BFA1140009FE7EF /* Models */,
 				5ED8767D2BFA10D5009FE7EF /* MarketingApp.swift */,
@@ -300,13 +299,6 @@
 				5ED876C12BFA52AB009FE7EF /* CampaignView.swift */,
 			);
 			path = CampaignsSelector;
-			sourceTree = "<group>";
-		};
-		5ED876C52BFA9EF9009FE7EF /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		5ED876C92BFAA0A0009FE7EF /* NetworkRequests */ = {
