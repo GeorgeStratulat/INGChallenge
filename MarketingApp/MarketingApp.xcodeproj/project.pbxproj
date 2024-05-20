@@ -19,6 +19,13 @@
 		5E9C4B312BFB4F1C00BB7EB9 /* ProviderDataAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B302BFB4F1B00BB7EB9 /* ProviderDataAccessible.swift */; };
 		5E9C4B342BFB627400BB7EB9 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B332BFB627400BB7EB9 /* Review.swift */; };
 		5E9C4B362BFB68DC00BB7EB9 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B352BFB68DC00BB7EB9 /* ReviewViewModel.swift */; };
+		5E9C4B632BFB6F4900BB7EB9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B5B2BFB6F1E00BB7EB9 /* NetworkService.swift */; };
+		5E9C4B642BFB6F4C00BB7EB9 /* NetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B602BFB6F1F00BB7EB9 /* NetworkImplementation.swift */; };
+		5E9C4B652BFB6F4E00BB7EB9 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B5E2BFB6F1F00BB7EB9 /* Serializer.swift */; };
+		5E9C4B662BFB6F5000BB7EB9 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B612BFB6F2000BB7EB9 /* NetworkErrors.swift */; };
+		5E9C4B672BFB6F5300BB7EB9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B5C2BFB6F1E00BB7EB9 /* NetworkRequest.swift */; };
+		5E9C4B682BFB6F5400BB7EB9 /* ProviderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B5F2BFB6F1F00BB7EB9 /* ProviderRequest.swift */; };
+		5E9C4B692BFB6F5600BB7EB9 /* TargetSpecificsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C4B5D2BFB6F1F00BB7EB9 /* TargetSpecificsRequest.swift */; };
 		5ED8767E2BFA10D5009FE7EF /* MarketingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED8767D2BFA10D5009FE7EF /* MarketingApp.swift */; };
 		5ED876802BFA10D5009FE7EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED8767F2BFA10D5009FE7EF /* ContentView.swift */; };
 		5ED876822BFA10D8009FE7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED876812BFA10D8009FE7EF /* Assets.xcassets */; };
@@ -36,13 +43,6 @@
 		5ED876BD2BFA3EC3009FE7EF /* DataAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876BC2BFA3EC3009FE7EF /* DataAccessible.swift */; };
 		5ED876C02BFA50DB009FE7EF /* CampaignSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876BF2BFA50DB009FE7EF /* CampaignSelector.swift */; };
 		5ED876C22BFA52AB009FE7EF /* CampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876C12BFA52AB009FE7EF /* CampaignView.swift */; };
-		5ED876D02BFAA0A0009FE7EF /* TargetSpecificsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876C72BFAA0A0009FE7EF /* TargetSpecificsRequest.swift */; };
-		5ED876D12BFAA0A0009FE7EF /* ProviderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876C82BFAA0A0009FE7EF /* ProviderRequest.swift */; };
-		5ED876D22BFAA0A0009FE7EF /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876CA2BFAA0A0009FE7EF /* NetworkErrors.swift */; };
-		5ED876D32BFAA0A0009FE7EF /* NetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876CB2BFAA0A0009FE7EF /* NetworkImplementation.swift */; };
-		5ED876D42BFAA0A0009FE7EF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876CC2BFAA0A0009FE7EF /* NetworkRequest.swift */; };
-		5ED876D52BFAA0A0009FE7EF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876CD2BFAA0A0009FE7EF /* NetworkService.swift */; };
-		5ED876D62BFAA0A0009FE7EF /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876CE2BFAA0A0009FE7EF /* Serializer.swift */; };
 		5ED876DB2BFAA17E009FE7EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED876DA2BFAA17E009FE7EF /* Constants.swift */; };
 		5ED876DE2BFAA2CE009FE7EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5ED876DD2BFAA2CE009FE7EF /* Alamofire */; };
 		5ED876E02BFAA2CE009FE7EF /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5ED876DF2BFAA2CE009FE7EF /* AlamofireDynamic */; };
@@ -88,6 +88,13 @@
 		5E9C4B302BFB4F1B00BB7EB9 /* ProviderDataAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDataAccessible.swift; sourceTree = "<group>"; };
 		5E9C4B332BFB627400BB7EB9 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		5E9C4B352BFB68DC00BB7EB9 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		5E9C4B5B2BFB6F1E00BB7EB9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5E9C4B5C2BFB6F1E00BB7EB9 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5E9C4B5D2BFB6F1F00BB7EB9 /* TargetSpecificsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSpecificsRequest.swift; sourceTree = "<group>"; };
+		5E9C4B5E2BFB6F1F00BB7EB9 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		5E9C4B5F2BFB6F1F00BB7EB9 /* ProviderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderRequest.swift; sourceTree = "<group>"; };
+		5E9C4B602BFB6F1F00BB7EB9 /* NetworkImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImplementation.swift; sourceTree = "<group>"; };
+		5E9C4B612BFB6F2000BB7EB9 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		5ED8767A2BFA10D5009FE7EF /* MarketingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED8767D2BFA10D5009FE7EF /* MarketingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingApp.swift; sourceTree = "<group>"; };
 		5ED8767F2BFA10D5009FE7EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,13 +115,6 @@
 		5ED876BC2BFA3EC3009FE7EF /* DataAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessible.swift; sourceTree = "<group>"; };
 		5ED876BF2BFA50DB009FE7EF /* CampaignSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignSelector.swift; sourceTree = "<group>"; };
 		5ED876C12BFA52AB009FE7EF /* CampaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignView.swift; sourceTree = "<group>"; };
-		5ED876C72BFAA0A0009FE7EF /* TargetSpecificsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetSpecificsRequest.swift; sourceTree = "<group>"; };
-		5ED876C82BFAA0A0009FE7EF /* ProviderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderRequest.swift; sourceTree = "<group>"; };
-		5ED876CA2BFAA0A0009FE7EF /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
-		5ED876CB2BFAA0A0009FE7EF /* NetworkImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkImplementation.swift; sourceTree = "<group>"; };
-		5ED876CC2BFAA0A0009FE7EF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		5ED876CD2BFAA0A0009FE7EF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		5ED876CE2BFAA0A0009FE7EF /* Serializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		5ED876DA2BFAA17E009FE7EF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +163,28 @@
 			path = Review;
 			sourceTree = "<group>";
 		};
+		5E9C4B5A2BFB6F0E00BB7EB9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C4B622BFB6F2C00BB7EB9 /* Network Requests */,
+				5E9C4B612BFB6F2000BB7EB9 /* NetworkErrors.swift */,
+				5E9C4B602BFB6F1F00BB7EB9 /* NetworkImplementation.swift */,
+				5E9C4B5B2BFB6F1E00BB7EB9 /* NetworkService.swift */,
+				5E9C4B5E2BFB6F1F00BB7EB9 /* Serializer.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5E9C4B622BFB6F2C00BB7EB9 /* Network Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C4B5C2BFB6F1E00BB7EB9 /* NetworkRequest.swift */,
+				5E9C4B5F2BFB6F1F00BB7EB9 /* ProviderRequest.swift */,
+				5E9C4B5D2BFB6F1F00BB7EB9 /* TargetSpecificsRequest.swift */,
+			);
+			path = "Network Requests";
+			sourceTree = "<group>";
+		};
 		5ED876712BFA10D5009FE7EF = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +209,7 @@
 		5ED8767C2BFA10D5009FE7EF /* MarketingApp */ = {
 			isa = PBXGroup;
 			children = (
-				5ED876CF2BFAA0A0009FE7EF /* Network */,
+				5E9C4B5A2BFB6F0E00BB7EB9 /* Networking */,
 				5ED876AC2BFA1AEE009FE7EF /* Features */,
 				5ED876A72BFA1140009FE7EF /* Models */,
 				5ED8767D2BFA10D5009FE7EF /* MarketingApp.swift */,
@@ -299,29 +321,6 @@
 				5ED876C12BFA52AB009FE7EF /* CampaignView.swift */,
 			);
 			path = CampaignsSelector;
-			sourceTree = "<group>";
-		};
-		5ED876C92BFAA0A0009FE7EF /* NetworkRequests */ = {
-			isa = PBXGroup;
-			children = (
-				5ED876C72BFAA0A0009FE7EF /* TargetSpecificsRequest.swift */,
-				5ED876C82BFAA0A0009FE7EF /* ProviderRequest.swift */,
-			);
-			path = NetworkRequests;
-			sourceTree = "<group>";
-		};
-		5ED876CF2BFAA0A0009FE7EF /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5ED876C92BFAA0A0009FE7EF /* NetworkRequests */,
-				5ED876CA2BFAA0A0009FE7EF /* NetworkErrors.swift */,
-				5ED876CB2BFAA0A0009FE7EF /* NetworkImplementation.swift */,
-				5ED876CC2BFAA0A0009FE7EF /* NetworkRequest.swift */,
-				5ED876CD2BFAA0A0009FE7EF /* NetworkService.swift */,
-				5ED876CE2BFAA0A0009FE7EF /* Serializer.swift */,
-			);
-			name = Network;
-			path = "../../../eMAG iOS Developer/MovieApp/MovieApp/Network";
 			sourceTree = "<group>";
 		};
 		5ED876DC2BFAA2CE009FE7EF /* Frameworks */ = {
@@ -470,28 +469,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ED876C22BFA52AB009FE7EF /* CampaignView.swift in Sources */,
-				5ED876D02BFAA0A0009FE7EF /* TargetSpecificsRequest.swift in Sources */,
 				5ED876AE2BFA1B06009FE7EF /* TargetSpecificsSelector.swift in Sources */,
 				5ED876B92BFA3A00009FE7EF /* ProviderSelector.swift in Sources */,
-				5ED876D22BFAA0A0009FE7EF /* NetworkErrors.swift in Sources */,
 				5E9C4B362BFB68DC00BB7EB9 /* ReviewViewModel.swift in Sources */,
 				5ED876B22BFA301C009FE7EF /* TargetSpecificsViewModel.swift in Sources */,
 				5E5A796E2BFB2C01000232B5 /* ProviderViewModel.swift in Sources */,
 				5ED876AB2BFA137B009FE7EF /* Provider.swift in Sources */,
 				5ED876B72BFA3421009FE7EF /* ErrorBoxView.swift in Sources */,
+				5E9C4B692BFB6F5600BB7EB9 /* TargetSpecificsRequest.swift in Sources */,
 				5E9C4B342BFB627400BB7EB9 /* Review.swift in Sources */,
 				5E9C4B312BFB4F1C00BB7EB9 /* ProviderDataAccessible.swift in Sources */,
-				5ED876D62BFAA0A0009FE7EF /* Serializer.swift in Sources */,
+				5E9C4B652BFB6F4E00BB7EB9 /* Serializer.swift in Sources */,
+				5E9C4B642BFB6F4C00BB7EB9 /* NetworkImplementation.swift in Sources */,
+				5E9C4B682BFB6F5400BB7EB9 /* ProviderRequest.swift in Sources */,
 				5ED876C02BFA50DB009FE7EF /* CampaignSelector.swift in Sources */,
 				5ED876DB2BFAA17E009FE7EF /* Constants.swift in Sources */,
 				5ED876B42BFA3076009FE7EF /* TargetSpecificsDataAccessor.swift in Sources */,
-				5ED876D32BFAA0A0009FE7EF /* NetworkImplementation.swift in Sources */,
+				5E9C4B672BFB6F5300BB7EB9 /* NetworkRequest.swift in Sources */,
 				5ED876802BFA10D5009FE7EF /* ContentView.swift in Sources */,
 				5ED876BD2BFA3EC3009FE7EF /* DataAccessible.swift in Sources */,
+				5E9C4B632BFB6F4900BB7EB9 /* NetworkService.swift in Sources */,
 				5ED876A92BFA1159009FE7EF /* TargetingSpecifics.swift in Sources */,
-				5ED876D52BFAA0A0009FE7EF /* NetworkService.swift in Sources */,
-				5ED876D12BFAA0A0009FE7EF /* ProviderRequest.swift in Sources */,
-				5ED876D42BFAA0A0009FE7EF /* NetworkRequest.swift in Sources */,
+				5E9C4B662BFB6F5000BB7EB9 /* NetworkErrors.swift in Sources */,
 				5ED8767E2BFA10D5009FE7EF /* MarketingApp.swift in Sources */,
 				5E5A79702BFB35CD000232B5 /* ProviderDataAccessor.swift in Sources */,
 			);
